@@ -1,0 +1,44 @@
+* {
+  font-family: "DM Sans";
+}
+
+
+.container {
+  margin: 0 auto;
+  background-color: #fff0ee;
+  width: 960px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+
+.img-container {
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  width: 960px;
+  height: auto;
+}
+
+.info {
+  text-align: center;
+}
+
+.pink {
+  color: #f96d8d;
+}
+
+p {
+  font-weight: 600;
+}
+
+hr {
+  width: 300px;
+  border: 1px solid #f96d8d;
+}
+
+#pb-circle{
+  width: 70px;
+}

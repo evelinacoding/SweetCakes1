@@ -1,0 +1,162 @@
+.container {
+  margin: 0 300px;
+}
+
+h1 {
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+header img {
+  margin: 0 50px 0 50px;
+  justify-content: baseline;
+}
+
+.sweet-delights {
+  text-align: center;
+  display: block;
+  margin-top: 60px;
+}
+
+.sweet-delights button {
+  margin-top: 30px;
+  border: none;
+  background-color: rgb(159, 255, 255);
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.cherry {
+  height: auto;
+}
+
+
+.new-flavors {
+  display: flex;
+  font-family: "DM Sans";
+  height: 400px;
+  background-color: rgb(245, 157, 157);
+}
+
+.new-flavors-text {
+  text-align: center;
+  margin: 50px;
+  line-height: 30px;
+}
+
+.new-flavors button {
+  border: none;
+  background-color: rgb(159, 255, 255);
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.menu-examples {
+  display: flex; /* Automatically is set to row*/
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-examples div {
+  display: flex;
+  flex-direction: column; /* Changes the divs inside of .menu-examples to a column setup(three-cupcakes, rice-crispy, cake) */
+  align-items: center;
+}
+
+.menu-examples img {
+  width: 300px;
+}
+
+.three-cupcakes {
+  background-color: #a7f7ff;
+  height: auto;
+  width: 100%;
+}
+
+.rice-crispy {
+  background-color: #bfeb86;
+  height: auto;
+  width: 100%;
+
+}
+
+.cake {
+  background-color: #ffde59;
+  height: auto;
+  width: 100%;
+}
+
+.food-text {
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "DM Sans";
+  background-color: rgb(255, 233, 237);
+  color: #000;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 35px;
+
+}
+
+.reward {
+  text-align: center;
+}
+
+p {
+  font-family: "DM Sans";
+}
+
+h4 {
+  font-family: "DM Sans";
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.icons div {
+  flex-direction: column;
+}
+
+.icons img {
+  width: 200px;
+}
+
+.discover {
+  margin: 30px;
+}
+
+.discover {
+  background-color: pink;
+  border: 3px solid rgb(255, 222, 227);
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.more-menu-examples {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  background-color: yellow;
+}
+
+.more-menu-examples img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin: 0;
+}
+
+
