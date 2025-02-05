@@ -1,0 +1,49 @@
+
+nav {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  align-items: flex-end;
+}
+
+h1 {
+font-family: "dreaming-outloud-script", sans-serif;
+font-weight: 400;
+color: #ffa194;
+width: 25%;
+font-size: 40px;
+margin: 0 0 0 20px;
+}
+
+h1:hover {
+  cursor: pointer;
+}
+
+
+.center-links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+.center-links a {
+  text-decoration: none;
+  margin: 0 30px 0 30px;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+
+}
+
+.icons {
+  display: flex;
+  align-items: flex-end;
+}
+
+.icons svg {
+  margin: 0 20px 0 20px;
+  width: 25px;
+  height: auto;
+}
