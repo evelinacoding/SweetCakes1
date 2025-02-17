@@ -25,6 +25,7 @@ h1:hover {
   width: 100%;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap: wrap;
 
 }
 
@@ -40,6 +41,7 @@ h1:hover {
 .icons {
   display: flex;
   align-items: flex-end;
+  /*flex: 1 1;*/
 }
 
 .icons svg {
@@ -47,3 +49,4 @@ h1:hover {
   width: 25px;
   height: auto;
 }
+
