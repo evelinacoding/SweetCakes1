@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+
+p, h3 {
+  font-family: "DM Sans";
+}
+
+p {
+  width: 500px;
+  background-color: #f6d4ff;
+}
+
+img {
+  text-align: center;
+}
+
+
+.box-1 {
+
+
+}
+
+.box-2 {
+  background-color: papayawhip;
+
+}
+
+.box-3 {
+  background-color: #ffafc0;
+}
