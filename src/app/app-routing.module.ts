@@ -6,6 +6,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
 import { MenuComponent } from './menu/menu.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
     {
       path: 'contact',
       component: ContactComponent
+    },
+    {
+      path: 'sign-in',
+      component: SignInComponent
     }
       ]
   }

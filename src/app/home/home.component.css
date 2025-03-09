@@ -7,11 +7,11 @@ h1 {
 }
 
 header {
-  background-color: #fff;
+
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
   margin-top: 40px;
+  padding: 30px;
 }
 
 header img {
@@ -28,9 +28,10 @@ header img {
 .sweet-delights button {
   margin-top: 30px;
   border: none;
-  background-color: rgb(159, 255, 255);
+  background-color: rgb(255, 59, 151);
   padding: 15px;
   border-radius: 25px;
+  color: #fff;
 }
 
 .cherry {
@@ -42,7 +43,7 @@ header img {
   display: flex;
   font-family: "DM Sans";
   height: 400px;
-  background-color: rgb(245, 157, 157);
+  background-color: rgb(255, 177, 216);
 }
 
 .new-flavors-text {
@@ -53,7 +54,7 @@ header img {
 
 .new-flavors button {
   border: none;
-  background-color: rgb(159, 255, 255);
+  background-color: rgb(197, 255, 242);
   padding: 15px;
   border-radius: 25px;
 }
@@ -75,20 +76,20 @@ header img {
 }
 
 .three-cupcakes {
-  background-color: #a7f7ff;
+  background-color: #baf9ff;
   height: auto;
   width: 100%;
 }
 
 .rice-crispy {
-  background-color: #bfeb86;
+  background-color: #dfffb4;
   height: auto;
   width: 100%;
 
 }
 
 .cake {
-  background-color: #ffde59;
+  background-color: #ffe785;
   height: auto;
   width: 100%;
 }

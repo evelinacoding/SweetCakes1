@@ -13,6 +13,7 @@ import { NavComponent } from './layouts/nav/nav.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './menu/menu.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MenuComponent } from './menu/menu.component';
     NavComponent,
     AboutUsComponent,
     ContactComponent,
-    MenuComponent
+    MenuComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
