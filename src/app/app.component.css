@@ -1,0 +1,8 @@
+/* By default most browsers set
+their font-size base to 16px.
+62.5% of 16px is 10px which is
+much easier to work with. */
+
+html {
+  font-size: 62.5%;
+}

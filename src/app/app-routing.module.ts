@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
     {
       path: 'sign-in',
       component: SignInComponent
+    },
+    {
+      path: 'register',
+      component: RegisterComponent
     }
       ]
   }

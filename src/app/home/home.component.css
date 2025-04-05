@@ -1,129 +1,209 @@
+/* -FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+-Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
 .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin: 0 300px;
 }
 
 h1 {
   font-family: "DM Sans", sans-serif;
+  font-size: 5rem;
+  padding: 0 4rem;
 }
 
+
 header {
+  grid-column: 1/5;
+
 
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  padding: 30px;
+  align-items: center;
+  margin-top: 3.6rem;
+  padding: 3rem;
+  max-width: 100%;
 }
 
 header img {
-  margin: 0 50px 0 50px;
-  justify-content: baseline;
+  max-width: 250px;
+  height: auto;
 }
 
 .sweet-delights {
   text-align: center;
   display: block;
-  margin-top: 60px;
+  margin-top: 4rem;
 }
 
 .sweet-delights button {
-  margin-top: 30px;
+  margin-top: 3rem;
   border: none;
-  background-color: rgb(255, 59, 151);
-  padding: 15px;
-  border-radius: 25px;
+  background-color: rgb(43, 24, 14);
+  padding: 1.5rem;
+  border-radius: 2.5rem;
   color: #fff;
+  font-weight: 700;
 }
 
-.cherry {
+.new-flavors {
+  grid-column: 1/5;
+  display: flex;
+
+  font-family: "DM Sans";
+  background-color: rgb(255, 177, 216);
+  max-width: 100%;
+}
+
+.cherry-cake {
+  max-width: 45%;
+}
+
+.cherry-cake img {
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
-
-.new-flavors {
-  display: flex;
-  font-family: "DM Sans";
-  height: 400px;
-  background-color: rgb(255, 177, 216);
+h3 {
+  font-size: 2.4rem;
+  padding: 2rem;
 }
 
+/* max-width for cherry cake defaults to
+25% because its what remains */
 .new-flavors-text {
+  line-height: 2rem;
+  max-width: 55%;
+
+  padding: 4rem 2rem 2rem 2rem;
   text-align: center;
-  margin: 50px;
-  line-height: 30px;
+  margin: 0 auto;
+}
+
+.new-flavors p {
+  font-size: 1.4rem;
+  line-height: 3.4rem;
 }
 
 .new-flavors button {
   border: none;
-  background-color: rgb(197, 255, 242);
-  padding: 15px;
-  border-radius: 25px;
+  background-color: rgb(253, 158, 187);
+  padding: 1.6rem;
+  border-radius: 2.5rem;
+  margin-top: 4rem;
+  font-size: 1.6rem;
 }
 
 .menu-examples {
+  grid-column: 1/5;
   display: flex; /* Automatically is set to row*/
-  justify-content: space-between;
+
   align-items: center;
+  max-width: 100%;
 }
 
-.menu-examples div {
+/* .menu-examples div {
   display: flex;
-  flex-direction: column; /* Changes the divs inside of .menu-examples to a column setup(three-cupcakes, rice-crispy, cake) */
+  flex-direction: column; /* Changes the divs inside of .menu-examples to a column setup(three-cupcakes, rice-crispy, cake)
   align-items: center;
-}
 
-.menu-examples img {
-  width: 300px;
-}
+} */
 
 .three-cupcakes {
   background-color: #baf9ff;
-  height: auto;
-  width: 100%;
+  padding: 0 125px;
+}
+
+.three-cupcakes img{
+  max-width: 100%;
+
 }
 
 .rice-crispy {
   background-color: #dfffb4;
-  height: auto;
-  width: 100%;
+  padding: 0 125px;
+}
 
+.rice-crispy img {
+  max-width: 100%;
 }
 
 .cake {
   background-color: #ffe785;
-  height: auto;
-  width: 100%;
+  padding: 0 125px;
+}
+
+.cake img {
+  max-width: 100%;
 }
 
 .food-text {
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-family: "DM Sans";
   background-color: rgb(255, 233, 237);
   color: #000;
-  padding: 15px;
-  margin-bottom: 30px;
-  border-radius: 35px;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+  display: block;
 
+}
+
+.three-cupcakes a, .rice-crispy a,
+.cake a {
+  font-size: 1.6rem;
+}
+
+.three-buttons{
+ width: 100px;
 }
 
 .reward {
   text-align: center;
+  grid-column: 1/5;
+  max-width: 100%;
 }
 
-p {
+.reward h1 {
+  margin: 2.4rem;
+}
+
+.reward p {
+  margin: 1.2rem;
+  font-size: 1.4rem;
   font-family: "DM Sans";
 }
+
+
 
 h4 {
   font-family: "DM Sans";
+  font-size: 2rem;
 }
 
 
 .icons {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 8rem;
 }
 
 .icons div {
@@ -131,33 +211,81 @@ h4 {
 }
 
 .icons img {
-  width: 200px;
+  max-width: 100%;
 }
 
 .discover {
-  margin: 30px;
+  margin: 3rem;
 }
+
+
 
 .discover {
   background-color: pink;
-  border: 3px solid rgb(255, 222, 227);
-  border-radius: 25px;
-  padding: 15px;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  font-weight: 500;
+  font-size: 1.6rem;
 }
 
 .more-menu-examples {
+
+  max-width: 100%;
+  grid-column: 1/5;
+
   display: flex;
-  flex-wrap: nowrap;
-  padding: 0;
-  margin: 0;
-  background-color: yellow;
-}
-
-.more-menu-examples img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  margin: 0;
+  gap: 0;
 }
 
 
+.example-images img{
+  max-width: 25%;
+}
+
+/* .more-menu-examples img {
+  max-width: 100%;
+  height: auto;
+} */
+
+
+/* BEGIN MEDIA QUERIES */
+
+/***********************/
+/*   */
+
+/* @media(max-width: 104em) {
+
+
+  header img {
+    max-width: 150px;
+    height: auto;
+  }
+
+
+
+  .new-flavors {
+    margin-bottom: 2 rem;
+  }
+
+  .new-flavors-text {
+    line-height: 1.4rem;
+  }
+
+  .new-flavors button {
+    margin-top: 2rem;
+  }
+
+}
+
+
+ @media (max-width: 90em) {
+
+  .new-flavors-text {
+
+  }
+
+  h3 {
+    padding: 1rem;
+  }
+} */

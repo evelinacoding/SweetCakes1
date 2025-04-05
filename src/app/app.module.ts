@@ -14,6 +14,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { RegisterComponent } from './register/register.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     AboutUsComponent,
     ContactComponent,
     MenuComponent,
-    SignInComponent
+    SignInComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
     RouterModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

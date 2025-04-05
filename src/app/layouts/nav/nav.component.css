@@ -44,9 +44,68 @@ h1:hover {
   /*flex: 1 1;*/
 }
 
-.icons svg {
+
+svg {
   margin: 0 20px 0 20px;
   width: 25px;
   height: auto;
 }
 
+
+.btn-mobile-nav {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+@media(max-width: 955px) {
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .center-links {
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .main-nav {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+  }
+
+  /* This will show the x close outline(to
+  close the page) when the window is
+  smaller or equal to 955px */
+  .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  /* This will hide the menu outline
+  when the window is smaller or equal
+  to 955px */
+  .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}
