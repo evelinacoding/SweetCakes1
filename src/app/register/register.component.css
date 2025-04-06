@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
 
 .container {
   max-width: 100%;
@@ -24,17 +21,21 @@ html {
   justify-content: center;
 }
 
+h1 {
+  font-size: 3.6rem;
+}
+
 .register-container {
   background-color: #fff0ee;
-  max-width: 100%;
+  width: 75%;
   position: absolute;
-  padding: 30px 300px;
-  margin-top: 50px;
+  padding: 3rem 30rem;
+  margin-top: 5rem;
 
 }
 
 .register-header {
-  margin: 20px 0 0 0;
+  margin: 2rem 0 0 0;
   font-family: "dreaming-outloud-script";
   color: #c23701;
 }
@@ -50,35 +51,73 @@ html {
   font-family: DM Sans, sans-serif;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 label, input {
   display: block;
 }
 
 input {
-  margin: 20px 0 20px 0;
-  font-size: 16px;
-  padding: 5px;
-  width: 100%;
-
+  margin: 1.5rem 0 1.5rem 0;
+  font-size: 1.6rem;
+  padding: .5rem;
 }
 
-select {
-  font-size: 16px;
-  padding: 5px;
+form input {
+  width:  180px;
+}
 
+
+select {
+  font-size: 1.6rem;
+  padding: .5rem;
+}
+
+.question input {
+  width: 100%;
 }
 
 button {
   background-color: #ffa194;
   border: none;
-  padding: 10px 25px;
-  margin-bottom: 30px;
-  font-size: 18px;
-  border-radius: 10px;
+  padding: 1rem 2.5rem;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
 }
 
 button:active,
 button:hover {
   background-color: #fff;
   box-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+}
+
+/* 500px */
+@media(max-width:32em) {
+
+
+  input {
+    margin: 1rem 0;
+  }
+
+  .register-container {
+    padding: 3rem 23rem;
+  }
+
+}
+
+
+@media(max-width:25em) {
+  .background-img-container {
+    background: none;
+  }
+
+  .register-container {
+    margin-top: 0;
+  }
 }

@@ -1,9 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 /* You can add global styles to this file, and also import other style files */
 html {
   font-size: 62.5%;
 }
 
-@media(max-width: 94em) {
+/* 1872px */
+@media(max-width: 117em) {
 
 html {
   font-size: 52%;
@@ -11,8 +19,3 @@ html {
 
 }
 
-@media(max-width: 87em) {
-  html {
-    
-  }
-}

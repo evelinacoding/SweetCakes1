@@ -7,14 +7,14 @@
 
 .container {
   display: grid;
-  margin: 50px 350px;
+
   grid-template-columns: 1fr 1fr;
 }
 
 header {
   grid-column: 1/ -1;
   background-color: #feefe8;
-  padding: 40px;
+  padding: 4rem;
   text-align: center;
 }
 
@@ -24,9 +24,24 @@ p, h2, h3 {
   text-align: center;
 }
 
+h2 {
+  font-size: 4rem;
+}
+
 p {
-  padding: 10px 40px;
-  line-height: 2em;
+  padding: 5rem 5rem;
+  line-height: 4rem;
+  font-size: 2.4rem;
+}
+
+.grid-item {
+  max-width: 100%;
+
+}
+
+.grid-item img {
+  max-width: 100%;
+  display: block;
 }
 
 .our-story {
@@ -37,7 +52,7 @@ p {
 }
 
 .about-text {
-  padding-top: 100px;
+  padding-top: 10rem;
 }
 
 .cake-shop-div {
@@ -45,7 +60,7 @@ p {
 }
 
 .cake-shop {
-  width: 600px;
+
   height: auto;
 }
 
@@ -53,17 +68,11 @@ p {
   background-color: #e8fffd;
 }
 
-.chocolate-bars {
-  width: 600px;
-}
 
 .vintage-cakes-div {
   background-color: #feefe8;
 }
 
-.vintage-cakes {
-  width: 600px;
-}
 
 
 .chocolate-box {
@@ -81,11 +90,59 @@ p {
   background-color: #ffafc0;
 }
 
-/*@media(max-width: 768px) {
-  .our-story > div {
-    flex: 1 1 100%;
-    max-width: 100%;
+/* 1160px */
+@media(max-width: 73em) {
+  h2 {
+    font-size: 3em;
+  }
+
+  p {
+    padding: 3rem 3rem;
+    line-height: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    padding-top: 5rem;
   }
 }
 
-*/
+ /* 856px */
+@media(max-width: 54em) {
+
+h2 {
+  font-size: 2em;
+}
+
+p{
+  padding: 1.5rem 1.5rem;
+  line-height: 2rem;
+  font-size: 1.6rem;
+}
+
+.about-text {
+  padding-top: 3rem;
+}
+}
+
+/* 580px */
+@media(max-width: 37em) {
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    padding: 1rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+  }
+
+  about-text {
+    padding-top: 0;
+  }
+}

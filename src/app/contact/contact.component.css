@@ -6,7 +6,7 @@
 .container {
   margin: 0 auto;
   background-color: #fff0ee;
-  max-width: 960px;
+
   padding-bottom: 10px;
   margin-top: 20px;
 
@@ -19,8 +19,7 @@
 }
 
 img {
-  display: flex;
-  width: 100%;
+  width: 75%;
 }
 
 .info {
@@ -33,10 +32,11 @@ img {
 
 p {
   font-weight: 600;
+  font-size: 2.4rem;
 }
 
 hr {
-  width: 300px;
+  width: 30rem;
   border: 1px solid #f96d8d;
 }
 
@@ -48,43 +48,96 @@ hr {
 .circles {
   display: flex;
   justify-content: space-around;
-  margin: 30px;
+  margin: 3rem;
 }
 
 
 
 #circle-1 {
  position: absolute;
- top: 100px;
- left: 60px;
- width: 80px;
+ top: 10rem;
+ left: 6rem;
+ max-width: 8rem;
 }
 
 #circle-2 {
   position: absolute;
-  top: 50px;
-  right: 170px;
-  width: 70px;
+  top: 5rem;
+  right: 17rem;
+  max-width: 7rem;
 }
 
 #circle-3 {
   position: absolute;
-  top: 270px;
-  left: 160px;
-  width: 100px;
+  top: 27rem;
+  left: 16rem;
+  width: 10rem;
 }
 
 #circle-4 {
   position: absolute;
-  right: 80px;
-  top: 200px;
-  width: 100px;
+  right: 8rem;
+  top: 20rem;
+  width: 10rem;
 
 }
 
 #circle-5 {
   position: absolute;
-  right: 230px;
-  bottom: 20px;
-  width: 70px;
+  right: 23rem;
+  bottom: 2rem;
+  width: 7rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+/* 1152px */
+@media(max-width:72em) {
+
+  #circle-2 {
+    top: 10rem
+  }
+}
+
+/* 865px */
+@media (max-width: 55em) {
+  #circle-1, #circle-2, #circle-3, #circle-4, #circle-5 {
+    display: none;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+/* 650px */
+@media(max-width: 41em) {
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  img {
+    width: 85%;
+  }
+}
+
+/* 340px */
+@media(max-width: 22em) {
+  img {
+    width: 90%;
+  }
+
+  hr {
+
+  }
 }

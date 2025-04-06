@@ -18,13 +18,13 @@
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 0 300px;
+  margin: 0 auto;
 }
 
 h1 {
   font-family: "DM Sans", sans-serif;
   font-size: 5rem;
-  padding: 0 4rem;
+  padding: 0 3rem;
 }
 
 
@@ -35,14 +35,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3.6rem;
   padding: 3rem;
   max-width: 100%;
 }
 
 header img {
-  max-width: 250px;
+  max-width: 15%;
   height: auto;
+  display: block;
 }
 
 .sweet-delights {
@@ -51,22 +51,14 @@ header img {
   margin-top: 4rem;
 }
 
-.sweet-delights button {
-  margin-top: 3rem;
-  border: none;
-  background-color: rgb(43, 24, 14);
-  padding: 1.5rem;
-  border-radius: 2.5rem;
-  color: #fff;
-  font-weight: 700;
-}
 
 .new-flavors {
   grid-column: 1/5;
   display: flex;
 
   font-family: "DM Sans";
-  background-color: rgb(255, 177, 216);
+  /* background-color: rgb(255, 177, 216); */
+  background-color: pink;
   max-width: 100%;
 }
 
@@ -81,63 +73,64 @@ header img {
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 4.5rem;
   padding: 2rem;
 }
 
 /* max-width for cherry cake defaults to
 25% because its what remains */
 .new-flavors-text {
-  line-height: 2rem;
   max-width: 55%;
-
-  padding: 4rem 2rem 2rem 2rem;
   text-align: center;
-  margin: 0 auto;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .new-flavors p {
-  font-size: 1.4rem;
-  line-height: 3.4rem;
+  font-size: 2rem;
+  line-height: 4rem;
+  padding: 3rem;
 }
 
 .new-flavors button {
   border: none;
   background-color: rgb(253, 158, 187);
-  padding: 1.6rem;
+  padding: 2.5rem;
   border-radius: 2.5rem;
-  margin-top: 4rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .menu-examples {
   grid-column: 1/5;
   display: flex; /* Automatically is set to row*/
 
+  background-color: rgb(255, 255, 255);
   align-items: center;
+  justify-content: center;
   max-width: 100%;
 }
 
-/* .menu-examples div {
-  display: flex;
-  flex-direction: column; /* Changes the divs inside of .menu-examples to a column setup(three-cupcakes, rice-crispy, cake)
-  align-items: center;
 
-} */
+.treats {
+  max-width: 25%;
+  margin: 10rem;
+  border-radius: 7rem;
+}
 
 .three-cupcakes {
   background-color: #baf9ff;
-  padding: 0 125px;
 }
 
 .three-cupcakes img{
   max-width: 100%;
-
 }
 
 .rice-crispy {
   background-color: #dfffb4;
-  padding: 0 125px;
 }
 
 .rice-crispy img {
@@ -146,12 +139,13 @@ h3 {
 
 .cake {
   background-color: #ffe785;
-  padding: 0 125px;
+
 }
 
 .cake img {
   max-width: 100%;
 }
+
 
 .food-text {
   text-align: center;
@@ -182,13 +176,15 @@ h3 {
   max-width: 100%;
 }
 
-.reward h1 {
-  margin: 2.4rem;
+.reward h2 {
+  margin: 8rem 0 3rem 0;
+  font-size: 4rem;
+  font-family: "DM Sans";
 }
 
 .reward p {
-  margin: 1.2rem;
-  font-size: 1.4rem;
+  margin-bottom: 8rem;
+  font-size: 2rem;
   font-family: "DM Sans";
 }
 
@@ -215,18 +211,13 @@ h4 {
 }
 
 .discover {
-  margin: 3rem;
-}
-
-
-
-.discover {
   background-color: pink;
   border: 0;
-  border-radius: 2rem;
-  padding: 1.5rem;
   font-weight: 500;
-  font-size: 1.6rem;
+  padding: 2.5rem;
+  border-radius: 2.5rem;
+  font-size: 2rem;
+  margin: 6rem;
 }
 
 .more-menu-examples {
@@ -243,49 +234,176 @@ h4 {
   max-width: 25%;
 }
 
-/* .more-menu-examples img {
-  max-width: 100%;
-  height: auto;
-} */
-
-
+/* ********************* */
 /* BEGIN MEDIA QUERIES */
-
 /***********************/
-/*   */
-
-/* @media(max-width: 104em) {
-
-
-  header img {
-    max-width: 150px;
-    height: auto;
-  }
 
 
 
-  .new-flavors {
-    margin-bottom: 2 rem;
-  }
-
-  .new-flavors-text {
-    line-height: 1.4rem;
-  }
+/* 1550px breakpoint */
+ @media (max-width: 97em) {
 
   .new-flavors button {
-    margin-top: 2rem;
-  }
-
-}
-
-
- @media (max-width: 90em) {
-
-  .new-flavors-text {
-
+    border: none;
+    background-color: rgb(253, 158, 187);
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+    font-size: 2rem;
   }
 
   h3 {
     padding: 1rem;
   }
-} */
+
+  .new-flavors p {
+    padding: 3rem;
+  }
+
+  .treats {
+    margin: 5rem;
+  }
+
+}
+
+@media(max-width: 78em){
+  .new-flavors-text h3 {
+    font-size: 3rem;
+  }
+
+  .new-flavors p {
+    padding: 2rem;
+    line-height: 3rem;
+  }
+
+  .reward h2 {
+    margin: 2rem 0 3rem 0;
+  }
+}
+
+/* 960px */
+@media(max-width: 60em) {
+  .new-flavors-text h3 {
+    font-size: 2.5rem;
+  }
+
+  .new-flavors p {
+    line-height: 2.5rem;
+    padding: 1.5rem;
+  }
+
+  .new-flavors button {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .sweet-delights h1 {
+    font-size: 4rem;
+  }
+
+  .treats {
+    margin: 3.5rem;
+  }
+}
+
+/* 780px */
+@media(max-width: 49em) {
+  .sweet-delights h1 {
+    font-size: 3rem;
+    padding: 1.6rem;
+  }
+
+  .new-flavors-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .new-flavors p {
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  .new-flavors button {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .treats {
+    margin: 1.5rem;
+    border-radius: 4rem;
+  }
+}
+
+/* 585px */
+@media(max-width: 37em){
+
+  .sweet-delights h1 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .new-flavors {
+    flex-direction: column;
+  }
+
+  .cherry-cake {
+    max-width: 100%;
+  }
+
+  .new-flavors-text {
+    max-width: 100%;
+    padding: 4rem;
+  }
+
+  .reward h2 {
+    font-size: 3rem;
+    margin: 2rem 0 3rem 0;
+  }
+
+  .reward p {
+    margin-bottom: 4rem;
+  }
+
+  .icons {
+    gap: 4rem;
+  }
+
+  .discover {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .example-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+  }
+
+  .example-images img {
+    max-width: 100%;
+  }
+}
+
+/* 416px */
+@media(max-width: 26em) {
+  header {
+    padding: 0;
+  }
+
+  .treats {
+    margin: 1rem;
+  }
+
+  .reward h2 {
+    font-size: 2.4rem;
+  }
+
+  .icons {
+    gap: 2rem;
+  }
+
+  .treats {
+    border-radius: 2rem;
+  }
+
+}
