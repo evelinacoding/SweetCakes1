@@ -13,7 +13,23 @@ header {
 .menu-title {
   text-align: center;
   padding: 30px;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 0 0 10px 0
+}
+
+h3 {
+  font-family: "DM Sans", sans-serif;
+  padding: 10px;
+  font-size: 20px;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
 }
 
 /*.cupcake-container {
